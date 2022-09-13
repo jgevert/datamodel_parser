@@ -1,0 +1,35 @@
+{
+  "schema": "salesforce",
+  "table_name": "test_name",
+  "datamodel":
+  [
+    {"name": "data_source", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "partition_date", "type": "DATE", "mode": "REQUIRED"},
+    {"name": "campaign_id__adwords", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "campaign__adwords", "type":  "STRING", "mode": "REQUIRED"},
+    {"name": "campaign_type__adwords", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "ad_group_id__adwords", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "ad_group_name__adwords", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "ad_group_type__adwords","type": "STRING","mode": "REQUIRED"},
+    {"name": "impressions__adwords","type": "INTEGER", "mode": "NULLABLE"},
+    {"name": "clicks__adwords", "type": "INTEGER", "mode": "NULLABLE"},
+    {"name": "cost__adwords", "type": "FLOAT", "mode": "NULLABLE"},
+    {"name": "conversions__adwords", "type": "FLOAT", "mode": "NULLABLE"},
+    {"name": "all_conv___adwords", "type": "FLOAT", "mode": "NULLABLE"},
+    {"name": "conversion_name__adwords", "type": "STRING", "mode": "NULLABLE"},
+    {"name": "conversion_category_name__adwords", "type": "STRING", "mode": "NULLABLE"}
+  ],
+  "hash_list":
+  [
+    "BillingStreet",
+    "Account_Owner_Comm__c",
+    "SoldToStreet__c",
+    "helper_account_quickref__c",
+    "Company_Phone__c",
+    "Assigned_To_r_Email__c",
+    "SecondSearchLine__c",
+    "ShippingAddress"
+  ],
+  "special_hashing": [],
+  "primary_key": "Id"
+}
