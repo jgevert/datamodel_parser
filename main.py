@@ -1,7 +1,7 @@
 from data_parser import Handler
 
 if __name__ == "__main__":
-    data_model = Handler(r"D:\Code\datamodel_parser\datamodel\datamodel.json")
+    data_model = Handler("/datamodel/datamodel.json")
     primary_key = data_model.get_primary_key()
     hash_list = data_model.get_hash_list()
     special_hash_list = data_model.get_hash_list()
