@@ -1,13 +1,13 @@
 import json
 
 
-class Handler:
+class JsonToData:
     """
     Handler class with importing JSON information for future pandas and sql processing
     """
     def __init__(self, model_storage_location: str):
         """
-        Init method which needs is mandatory for loading JSON information
+        Init method which needs are mandatory for loading JSON information
         Args:
             model_storage_location: str (location of json file)
         """
