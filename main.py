@@ -14,4 +14,6 @@ if __name__ == "__main__":
 
     # SQL to JSON
     data_model_from_sql = SqlToData("datamodel/create_dummy_data_table.sql")
-    print(data_model_from_sql.file_content)
+    primary_key = data_model_from_sql.get_primary_key()
+    datetime_info = data_model_from_sql.get_datetime_information()
+    print(datetime_info)
